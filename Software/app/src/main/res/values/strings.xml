@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quizify</string>
+    <string name="gost">GOST</string>
+    <string name="naslov">QUIZIFY</string>
+    <string name="sign_in">Prijavite se</string>
+    <string name="type_text">Unesite tekst pitanja</string>
+    <string name="correct_answer">Tocan odgovor</string>
+    <string name="incorrect_answer1">Netocan odgovor 1</string>
+    <string name="incorrect_answer2">Netocan odgovor 2</string>
+    <string name="incorrect_answer3">Netocan odgovor 3</string>
+    <string name="save_question">POHRANI PITANJE</string>
+    <string name="password">Lozinka</string>
+    <string name="username">Korisnicko ime</string>
+    <string name="continue_as">Nastavite kao:</string>
+    <string name="without_profile">Nemaš profil?</string>
+    <string name="register">REGISTRIRAJ SE</string>
+</resources>

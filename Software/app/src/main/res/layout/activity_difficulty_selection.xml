@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#4B0082"
+    android:gravity="center_horizontal"
+    android:padding="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUIZIFY"
+                android:textSize="80sp"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/tv_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Question Difficulty"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvSelectedGameMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSelectedCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btn_easy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Easy"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_medium"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Medium"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_hard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hard"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_random"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Random"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/black"
+        android:padding="0dp"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/button_selector" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home"
+            android:background="@drawable/button_selector"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/button_selector"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_exit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_exit"
+            android:background="@drawable/button_selector"/>
+    </LinearLayout>
+</LinearLayout>

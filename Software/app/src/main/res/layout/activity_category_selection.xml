@@ -1,0 +1,216 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B0082">
+
+    <!-- Glavni sadržaj -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_bar">
+
+        <!-- Naslov aplikacije -->
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZIFY"
+            android:textSize="80sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Opis -->
+        <TextView
+            android:id="@+id/tv_quiz_configuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Configuration"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Gumb za sve kategorije -->
+        <Button
+            android:id="@+id/button_all_categories"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="ALL CATEGORIES"
+            android:textColor="#000000" />
+
+        <!-- GridLayout za pojedine kategorije -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/button_movies"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="FILM"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_games"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="GAMES"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_history"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="HISTORY"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_geography"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="GEOGRAPHY"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_music"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="MUSIC"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_physics"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="PHYSICS"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_biology"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="BIOLOGY"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_cars"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="CARS"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_sport"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="SPORT"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/button_it"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="IT"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:layout_margin="8dp" />
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Navigacijska traka -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="16dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/button_selector"/>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <!-- Home Button -->
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home"
+            android:background="@drawable/button_selector"/>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <!-- Profile Button -->
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/button_selector"/>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <!-- Exit Button -->
+        <ImageView
+            android:id="@+id/btn_exit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_exit"
+            android:background="@drawable/button_selector"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
